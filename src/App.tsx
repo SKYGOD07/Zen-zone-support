@@ -76,21 +76,21 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/login" element={!session ? <Login /> : <Navigate to="/" />} />
-            
+
             {session ? (
               <>
                 <Route path="*" element={
                   <div className="min-h-screen bg-background">
                     <Header />
                     <Sidebar />
-                    <main className="ml-64 mt-16 p-8">
+                    <main className="lg:ml-64 mt-16 p-4 lg:p-8">
                       <Routes>
                         {/* Common Routes */}
                         <Route path="/" element={<Dashboard />} />
                         <Route path="/profile" element={<Profile />} />
                         <Route path="/settings" element={<Settings />} />
                         <Route path="/resources" element={<Resources />} />
-                        
+
                         {/* Student Routes */}
                         <Route path="/mood-garden" element={<MoodGarden />} />
                         <Route path="/ai-support" element={<AISupport />} />
@@ -99,14 +99,14 @@ const App = () => {
                         <Route path="/peer-support" element={<PeerSupport />} />
                         <Route path="/wellness-tools" element={<WellnessTools />} />
                         <Route path="/history" element={<History />} />
-                        
+
                         {/* Counsellor Routes */}
                         <Route path="/counsellor/clients" element={<CounsellorClients />} />
                         <Route path="/counsellor/appointments" element={<CounsellorAppointments />} />
                         <Route path="/counsellor/notes" element={<CounsellorNotes />} />
                         <Route path="/counsellor/progress" element={<CounsellorProgress />} />
                         <Route path="/counsellor/schedule" element={<CounsellorSchedule />} />
-                        
+
                         {/* Admin Routes */}
                         <Route path="/campus-pulse" element={<CampusPulse />} />
                         <Route path="/admin/users" element={<AdminUsers />} />
@@ -114,7 +114,7 @@ const App = () => {
                         <Route path="/admin/analytics" element={<AdminAnalytics />} />
                         <Route path="/admin/reports" element={<AdminReports />} />
                         <Route path="/admin/system-settings" element={<AdminSystemSettings />} />
-                        
+
                         <Route path="*" element={<NotFound />} />
                       </Routes>
                     </main>
