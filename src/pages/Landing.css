@@ -3,7 +3,7 @@
    src/pages/Landing.css
 ═══════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap');
 
 .lp-root {
     --bg-deep: #0d0d14;
@@ -24,13 +24,15 @@
     --text-dim: #94a3b8;
     --text-muted: #64748b;
 
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background: var(--bg-deep);
     color: var(--text-main);
     overflow-x: hidden;
     cursor: none;
     scroll-behavior: smooth;
     min-height: 100vh;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
 }
 
 /* ── Cursor ── */
@@ -176,7 +178,7 @@
     color: var(--white);
     border: none;
     border-radius: 100px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: .85rem;
     font-weight: 500;
     cursor: none;
@@ -281,7 +283,7 @@
 }
 
 .lp-h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: clamp(3rem, 8vw, 6.8rem);
     font-weight: 300;
     line-height: 1.0;
@@ -323,7 +325,7 @@
 }
 
 .lp-h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: clamp(3rem, 8vw, 6.8rem);
     font-weight: 600;
     line-height: 1.0;
@@ -360,7 +362,7 @@
     color: var(--white);
     border: none;
     border-radius: 100px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: .95rem;
     font-weight: 500;
     cursor: none;
@@ -380,7 +382,7 @@
     color: var(--text-dim);
     border: 1px solid var(--border);
     border-radius: 100px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: .95rem;
     font-weight: 400;
     cursor: none;
@@ -434,7 +436,7 @@
 }
 
 .lp-hc-val {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 1.7rem;
     font-weight: 300;
     color: #fff;
@@ -531,7 +533,7 @@
 }
 
 .lp-stat-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 3.5rem;
     font-weight: 300;
     background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
@@ -543,7 +545,7 @@
 }
 
 .lp-stat-suf {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 2rem;
     background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
     -webkit-background-clip: text;
@@ -576,7 +578,7 @@
 }
 
 .lp-sec-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: clamp(2.2rem, 5vw, 3.8rem);
     font-weight: 300;
     line-height: 1.1;
@@ -823,7 +825,7 @@
 
 .lp-dash-url {
     font-size: .65rem;
-    font-family: 'Space Mono', monospace;
+    font-family: 'DM Mono', monospace;
     color: var(--text-muted);
 }
 
@@ -981,7 +983,7 @@
 }
 
 .lp-quote {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 3.5rem;
     line-height: .6;
     background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
@@ -993,7 +995,7 @@
 }
 
 .lp-test-text {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 1.05rem;
     font-style: italic;
     color: var(--text-main);
@@ -1051,7 +1053,7 @@
 }
 
 .lp-cta-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: clamp(2.8rem, 6vw, 5rem);
     font-weight: 300;
     line-height: 1.1;
@@ -1121,7 +1123,7 @@
 .lp-ft-right {
     font-size: .72rem;
     color: var(--text-muted);
-    font-family: 'Space Mono', monospace;
+    font-family: 'DM Mono', monospace;
 }
 
 /* ══════════════════════ RESPONSIVE ══════════════════════ */
